@@ -12,11 +12,12 @@ gem install dotenv
 
 You can get your Trello tokens [here](https://trello.com/app-key)
 
-## Usage
+## Setup
 
-The `Helpers` class will help you to get the ids you need to further add them in your dotenv.
+The `Helpers` class will help you to get the ids that you will need. Basically you have to decide to which list you want to write and add that one to the dotenv.
 
-Setup flow. From an `irb` session within the `trello_pusher` directory:
+From an `irb` session within the `trello_pusher` directory:
+
 ```
 require_relative './helpers'
 boards = Helpers.boards('antonio')
@@ -33,7 +34,9 @@ MEMBER_TOKEN='bar'
 LIST_ID='xyz'
 ```
 
-While planning, a new card has a title and optionally a description. This will be declared by the usage of `*` for titles and `-` for descriptions.
+## Usage
+
+While planning your project, every new card is composed by a title and an optional description. This will be declared by the usage of `*` for titles and `-` for descriptions.
 
 ```
 # foo_file
@@ -45,7 +48,7 @@ While planning, a new card has a title and optionally a description. This will b
 
 ruby pusher.rb foo_file
 ```
-This will create 3 cards, Cards 1 & 3 with description and the 2 with just title.
+Running the script will create 3 cards: Cards 1 & 3 with description and the Card 2 with just title.
 
 ![](./assets/board.png)
 
