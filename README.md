@@ -12,7 +12,7 @@ You can get your tokens [here](https://trello.com/app-key)
 
 The `Helpers` class will help you to get the ids you need to further add in your dotenv.
 
-Normal flow will be:
+Setup flow will be:
 ```
 boards = Helpers.boards('antonio')
 # name: hola, id: 123abc
@@ -31,15 +31,17 @@ While planning, a new card has a title and optionally a description. This will b
 * Card3
 - Desc3
 
-ruby foo_file
+ruby pusher.rb foo_file
 ```
 This will create 3 cards, Cards 1 & 3 with description and the 2 with just title.
 
 
+Optionally you could add an alias to your bash_profile.
+
 ## Disclaimer
 
-This is for personal user. I push from sublime while working so I just store specific ids in the dotenv as I don't need much more magic.
+This is for personal use. I push from sublime while working so I just store specific ids in the dotenv as I don't need much more magic.
 
-If anybody finds this useful and would want it more general, feel free to reach me or open a PR.
+If anybody finds this useful and would want it more general, feel free to reach out or open a PR.
 
 Cheers!

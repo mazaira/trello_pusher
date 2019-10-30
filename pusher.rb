@@ -33,7 +33,6 @@ Task = Struct.new(:name, :desc) do
   end
 end
 
-
 File.open(ARGV[0], "r") do |f|
   tasks = []
   f.each_line do |line|
